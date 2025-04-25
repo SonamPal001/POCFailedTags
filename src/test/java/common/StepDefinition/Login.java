@@ -20,7 +20,7 @@ public class Login {
     @When("user enters correct credentials")
     public void userEntersCorrectUsernameANDPasswordValues() {
         WebDriverManager.driver.findElement(By.id("username")).sendKeys("student");
-        WebDriverManager.driver.findElement(By.id("password")).sendKeys("Password123");
+        WebDriverManager.driver.findElement(By.id("pass")).sendKeys("Password123");
         WebDriverManager.driver.findElement(By.id("submit")).click();
     }
 
